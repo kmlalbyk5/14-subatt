@@ -70,7 +70,6 @@ body{
   justify-content:center;
   align-items:center;
   padding:15px;
-  overflow-y:auto;
 }
 
 /* GALERİ & NOT ORTAK */
@@ -78,15 +77,13 @@ body{
   background:white;
   width:100%;
   max-width:1200px;
-  height:auto;
-  max-height:90vh;
+  height:90vh;
   padding:25px;
   border-radius:30px;
   box-shadow:0 25px 50px rgba(0,0,0,0.2);
   display:flex;
   flex-direction:column;
   align-items:center;
-  overflow:hidden;
 }
 
 .gallery-scroll{
@@ -208,7 +205,7 @@ body{
   transform:scale(1.1);
 }
 
-/* 📱 TELEFON */
+/* 📱 TELEFON ÖZEL AYAR */
 @media (max-width:600px){
 
   .gallery{
@@ -228,9 +225,6 @@ body{
   #romanticText{
     font-size:16px !important;
     line-height:1.6 !important;
-    max-height:60vh;
-    overflow-y:auto;
-    padding-right:8px;
   }
 
   .icon-btn{
@@ -239,5 +233,28 @@ body{
     font-size:40px;
   }
 
+}/* MOBİLDE NOT KAYDIRMA */
+@media (max-width:600px){
+
+  #notePage .gallery-card{
+    height:85vh;
+  }
+
+  #romanticText{
+    max-height:60vh;
+    overflow-y:auto;
+    padding-right:8px;
+  }
+
+  #romanticText::-webkit-scrollbar{
+    width:6px;
+  }
+
+  #romanticText::-webkit-scrollbar-thumb{
+    background:#d48ac4;
+    border-radius:10px;
+  }
+
 }
+
 </style>
